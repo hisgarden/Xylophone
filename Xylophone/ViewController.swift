@@ -20,6 +20,14 @@ class ViewController: UIViewController {
     @IBAction func keyPressed(_ sender: UIButton) {
         playSound(soundName: sender.currentTitle!)
         print (sender.currentTitle!)
+        
+        UIView.animate(withDuration: 0.2) {
+                sender.alpha = 0.5 // Reduces the opacity of the button to half
+            }
+            // Your button action here
+            UIView.animate(withDuration: 0.2) {
+                sender.alpha = 1.0 // Brings sender's opacity back up to fully opaque
+            }
     }
     
     func playSound(soundName: String) {
