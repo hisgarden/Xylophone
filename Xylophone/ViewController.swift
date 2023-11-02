@@ -19,7 +19,11 @@ class ViewController: UIViewController {
 
     @IBAction func keyPressed(_ sender: UIButton) {
         playSound(soundName: sender.currentTitle!)
+<<<<<<< HEAD
         print (sender.currentTitle!)
+=======
+        // print (sender.currentTitle!)
+>>>>>>> e58a04f (change the opacity of the button that was pressed so that when you press a button on the Xylophone app, it will dim to half the original opacity. this is acomplished using UIView.animate)
         
         UIView.animate(withDuration: 0.2) {
                 sender.alpha = 0.5 // Reduces the opacity of the button to half
